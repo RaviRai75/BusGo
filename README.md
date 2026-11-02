@@ -1,12 +1,49 @@
-# React + Vite
+# BusGo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A bus-travel landing page built with React, Vite and Tailwind CSS. This project demonstrates component-based UI development, responsive layouts and animated travel content.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Rotating hero images with origin, destination and travel-date inputs
+- Popular-route cards with sample fares, travel times and offers
+- Separate header, about, features, statistics, testimonials and call-to-action components
+- Responsive grid layouts and hover transitions
 
-## Expanding the ESLint configuration
+## Technology
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React 19, JavaScript, Vite 7, Tailwind CSS 3, Flowbite React and Lucide React.
+
+## Run locally
+
+Use a Node.js version supported by Vite 7 (Node.js 20.19+ or 22.12+).
+
+```bash
+git clone https://github.com/RaviRai75/BusGo.git
+cd BusGo
+npm ci
+npm run dev
+```
+
+Open the local URL printed by Vite.
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Generate the production frontend in `dist/` |
+| `npm run preview` | Preview the built frontend |
+| `npm run lint` | Run ESLint |
+
+## Structure
+
+- `src/App.jsx`: application composition
+- `src/Components/`: reusable page sections
+- `src/index.css`: global styling
+- `public/`: static assets
+
+## Project scope
+
+This repository is a frontend demonstration. Route information, fares, offers and testimonials are sample content. The search form and booking buttons are not connected to a booking API, payment gateway or live seat inventory.
+
+## Author
+
+[Ravi Ranjan Rai](https://github.com/RaviRai75) — Full Stack and React Native Developer.
